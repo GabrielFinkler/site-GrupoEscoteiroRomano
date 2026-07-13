@@ -1,7 +1,7 @@
 import Header from './components/Header.tsx'
 import Hero from './components/Hero.tsx'
 import Sobre from './components/Sobre.tsx'
-import Atividades from './components/Atividades.tsx'
+import Ramos from './components/Ramos.tsx'
 import Galeria from './components/Galeria.tsx'
 import ComoEntrar from './components/ComoEntrar.tsx'
 import Contato from './components/Contato.tsx'
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <Sobre />
-      <Atividades />
+      <Ramos />
       <Galeria />
       <ComoEntrar />
       <Contato />

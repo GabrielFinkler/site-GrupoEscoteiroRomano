@@ -1,24 +1,19 @@
-import { useEffect, useRef } from 'react'
-import { INSTAGRAM_POSTS, INSTAGRAM_PROFILE, INSTAGRAM_HANDLE } from '../instagram-posts'
+import { useEffect } from 'react'
+import { INSTAGRAM_PROFILE, INSTAGRAM_HANDLE } from '../instagram-posts'
 
 export default function Galeria() {
-  const containerRef = useRef<HTMLDivElement>(null)
-
   useEffect(() => {
-    // Carrega o script de embed do Instagram
+    // Carrega o script de embed do RSS.app
     const script = document.createElement('script')
-    script.src = 'https://www.instagram.com/embed.js'
+    script.src = 'https://widget.rss.app/v1/imageboard.js'
     script.async = true
+    script.type = 'text/javascript'
     document.body.appendChild(script)
 
-    script.onload = () => {
-      if (window.instgrm) {
-        window.instgrm.Embeds.process()
-      }
-    }
-
     return () => {
-      document.body.removeChild(script)
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
+      }
     }
   }, [])
 
@@ -28,31 +23,14 @@ export default function Galeria() {
         <div className="section-header">
           <span className="section-tag">Fotos</span>
           <h2>Nossa Galeria</h2>
-          <p>Acompanhe nossos momentos pelo Instagram</p>
+          <p>Acompanhe nossos momentos mais recentes pelo Instagram</p>
         </div>
 
-        <div className="galeria-grid" ref={containerRef}>
-          {INSTAGRAM_POSTS.map((url, i) => (
-            <div className="galeria-embed" key={i}>
-              <blockquote
-                className="instagram-media"
-                data-instgrm-captioned
-                data-instgrm-permalink={url}
-                style={{
-                  background: '#FFF',
-                  border: 0,
-                  borderRadius: '12px',
-                  margin: 0,
-                  maxWidth: '100%',
-                  width: '100%',
-                  padding: 0,
-                }}
-              />
-            </div>
-          ))}
+        <div className="galeria-widget" style={{ minHeight: '436px' }}>
+          <div dangerouslySetInnerHTML={{ __html: '<rssapp-imageboard id="qJpwaPhtsy68OnWB"></rssapp-imageboard>' }} />
         </div>
 
-        <div className="galeria-cta">
+        <div className="galeria-cta" style={{ marginTop: '40px' }}>
           <a
             href={INSTAGRAM_PROFILE}
             target="_blank"

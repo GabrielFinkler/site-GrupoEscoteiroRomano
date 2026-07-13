@@ -28,7 +28,7 @@ export default function Header() {
         <nav className={menuOpen ? 'open' : ''}>
           <a href="#inicio" onClick={handleLinkClick}>Início</a>
           <a href="#sobre" onClick={handleLinkClick}>Sobre</a>
-          <a href="#atividades" onClick={handleLinkClick}>Atividades</a>
+          <a href="#ramos" onClick={handleLinkClick}>Seções</a>
           <a href="#galeria" onClick={handleLinkClick}>Galeria</a>
           <a href="#contato" onClick={handleLinkClick}>Contato</a>
           <a href="#contato" className="cta-nav" onClick={handleLinkClick}>Participar</a>

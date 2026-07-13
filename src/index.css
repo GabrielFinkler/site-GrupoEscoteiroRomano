@@ -425,77 +425,73 @@ section {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ===== ATIVIDADES ===== */
-.atividades {
+/* ===== RAMOS ===== */
+.ramos {
   background: var(--white);
 }
 
-.cards {
+.ramos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-.card {
+.ramo-card {
   background: var(--cream);
   border-radius: var(--radius-lg);
-  padding: 32px 28px;
+  padding: 36px 24px;
   transition: var(--transition);
   border: 1px solid rgba(0,0,0,0.04);
-  position: relative;
-  overflow: hidden;
+  text-align: center;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--red-500), var(--gold));
-  transform: scaleX(0);
-  transition: transform 0.4s ease;
-  transform-origin: left;
-}
-
-.card:hover::before {
-  transform: scaleX(1);
-}
-
-.card:hover {
+.ramo-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
 }
 
-.card-icon {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
-  display: block;
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.card-date {
-  display: inline-flex;
+.ramo-imagem {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 24px;
+  display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.85rem;
-  color: var(--red-600);
-  font-weight: 600;
-  background: var(--red-100);
-  padding: 4px 12px;
-  border-radius: 6px;
-  margin-bottom: 12px;
+  justify-content: center;
 }
 
-.card p.card-desc {
+.ramo-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.ramo-card:hover .ramo-imagem img {
+  transform: scale(1.05);
+}
+
+.ramo-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--red-900);
+}
+
+.ramo-idade {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--gray-800);
+  font-weight: 600;
+  background: var(--white);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray-200);
+}
+
+.ramo-desc {
   color: var(--gray-600);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -799,14 +795,15 @@ footer {
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  padding: 8px 16px;
   border-radius: 10px;
   background: rgba(255,255,255,0.08);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
   transition: var(--transition);
   color: rgba(255,255,255,0.7);
   text-decoration: none;
@@ -898,8 +895,8 @@ footer {
     height: 300px;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  .ramos-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .galeria-grid {
@@ -934,7 +931,7 @@ footer {
     padding: 70px 0;
   }
 
-  .sobre-stats {
+  .sobre-stats, .ramos-grid {
     grid-template-columns: 1fr;
   }
 
