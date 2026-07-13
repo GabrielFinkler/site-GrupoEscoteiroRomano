@@ -19,7 +19,7 @@ export default function Ramos() {
       imagem: '/senior.png'
     },
     {
-      nome: 'Clã Pantheon',
+      nome: 'Clã Pioneiro Pantheon',
       idade: '18 a 22 anos',
       descricao: 'Foco no serviço ao próximo, projetos solidários e preparação ativa para a vida adulta.',
       imagem: '/cla.png'
