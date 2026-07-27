@@ -7,6 +7,7 @@ import ComoEntrar from './components/ComoEntrar.tsx'
 import Contato from './components/Contato.tsx'
 import Footer from './components/Footer.tsx'
 import './index.css'
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ComoEntrar />
       <Contato />
       <Footer />
+      <Analytics />
     </>
   )
 }
