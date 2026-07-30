@@ -12,7 +12,7 @@ export default function Header() {
       <div className="header-inner">
         <div className="logo">
           <img src="/logo.png" alt="Logo GE Romano" className="logo-img" />
-          <h1>GE Romano 350/RS</h1>
+          <span className="logo-text">GE Romano 350/RS</span>
         </div>
 
         <button

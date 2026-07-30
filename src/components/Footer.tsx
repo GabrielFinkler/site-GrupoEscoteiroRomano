@@ -17,13 +17,15 @@ export default function Footer() {
           </div>
           <div className="footer-links">
             <h4>Navegação</h4>
-            <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#ramos">Seções</a></li>
-              <li><a href="#galeria">Galeria</a></li>
-              <li><a href="#contato">Contato</a></li>
-            </ul>
+            <nav aria-label="Navegação do rodapé">
+              <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#ramos">Seções</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+              </ul>
+            </nav>
           </div>
           <div className="footer-social">
             <h4>Redes Sociais</h4>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://grupoescoteiroromano.vercel.app/sitemap.xml

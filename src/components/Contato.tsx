@@ -23,7 +23,7 @@ export default function Contato() {
           <p>Tem alguma dúvida? Entre em contato com a gente!</p>
         </div>
         <div className="contato-grid">
-          <div className="contato-info">
+          <address className="contato-info">
             <div className="contato-item">
               <div className="contato-item-icon">📧</div>
               <div>
@@ -52,7 +52,7 @@ export default function Contato() {
                 <p>Sábados, das 14h às 17h</p>
               </div>
             </div>
-          </div>
+          </address>
 
           <form className="contato-form" onSubmit={handleWhatsApp}>
             <h3>Envie uma mensagem</h3>
