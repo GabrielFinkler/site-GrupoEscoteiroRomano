@@ -3,7 +3,7 @@ export default function Hero() {
     <main>
       <section id="inicio" className="hero">
         <div className="hero-content">
-          <h1 className="sr-only">Grupo Escoteiro Romano 350/RS — Escotismo em Porto Alegre, RS</h1>
+          <h1 className="sr-only">Grupo Escoteiro Romano 350/RS</h1>
           <img src="/logo.png" alt="Logo do Grupo Escoteiro Romano 350/RS - Flor de Lis" className="hero-logo" />
 
           <h2>

@@ -456,6 +456,8 @@ section {
   transition: var(--transition);
   border: 1px solid rgba(0,0,0,0.04);
   text-align: center;
+  text-decoration: none;
+  display: block;
 }
 
 .ramo-card:hover {
