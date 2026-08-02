@@ -1,7 +1,7 @@
 export default function Ramos() {
   const ramos = [
     {
-      nome: 'Alcateia Apenine',
+      nome: 'Alcateia Apennine',
       idade: '6,5 a 10 anos',
       descricao: 'Onde a aventura começa! Aprender brincando em um ambiente inspirado nas histórias do Livro da Selva.',
       imagem: '/alcateia.png'
@@ -30,8 +30,8 @@ export default function Ramos() {
     <section id="ramos" className="ramos">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Nossas Seções</span>
-          <h2>Os Ramos do Escotismo</h2>
+          <span className="section-tag">Faixas Etárias</span>
+          <h2>Ramos do Escotismo</h2>
           <p>O Movimento Escoteiro é dividido por faixas etárias para garantir que as atividades sejam perfeitas para o desenvolvimento de cada jovem.</p>
         </div>
 
@@ -46,6 +46,13 @@ export default function Ramos() {
               <p className="ramo-desc">{ramo.descricao}</p>
             </div>
           ))}
+        </div>
+
+        <div className="baden-powell-quote">
+          <div className="quote-content">
+            <p className="quote-text">Não há ensino que se<br/>compare ao exemplo.</p>
+            <img src="/assinatura-bp.jpeg" alt="Assinatura Baden Powell of Gilwell" className="bp-signature" />
+          </div>
         </div>
       </div>
     </section>

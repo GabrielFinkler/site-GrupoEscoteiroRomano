@@ -12,7 +12,7 @@ export default function Header() {
       <div className="header-inner">
         <div className="logo">
           <img src="/logo.png" alt="Logo GE Romano" className="logo-img" />
-          <span className="logo-text">GE Romano 350/RS</span>
+          <span className="logo-text">Grupo Escoteiro Romano 350/RS</span>
         </div>
 
         <button
@@ -28,7 +28,7 @@ export default function Header() {
         <nav className={menuOpen ? 'open' : ''}>
           <a href="#inicio" onClick={handleLinkClick}>Início</a>
           <a href="#sobre" onClick={handleLinkClick}>Sobre</a>
-          <a href="#ramos" onClick={handleLinkClick}>Seções</a>
+          <a href="#ramos" onClick={handleLinkClick}>Ramos</a>
           <a href="#galeria" onClick={handleLinkClick}>Galeria</a>
           <a href="#contato" onClick={handleLinkClick}>Contato</a>
           <a href="#contato" className="cta-nav" onClick={handleLinkClick}>Participar</a>
