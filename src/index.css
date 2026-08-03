@@ -441,6 +441,7 @@ section {
 /* ===== RAMOS ===== */
 .ramos {
   background: var(--white);
+  padding-top: 20px;
 }
 
 .ramos-grid {

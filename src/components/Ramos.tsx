@@ -23,7 +23,7 @@ export default function Ramos() {
     },
     {
       nome: 'Clã Pioneiro Pantheon',
-      idade: '18 a 22 anos',
+      idade: '18 a 21 anos',
       descricao: 'Foco no serviço ao próximo, projetos solidários e preparação ativa para a vida adulta.',
       imagem: '/cla.png',
       link: 'https://www.escoteiros.org.br/ramo-pioneiro/'
