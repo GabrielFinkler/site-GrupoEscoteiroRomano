@@ -9,7 +9,7 @@ export default function Hero() {
           <h2>
             <span className="highlight">Grupo Escoteiro Romano</span>
           </h2>
-          <p>Aventura, amizade e aprendizado. Há mais de 5 anos construindo caráter e cidadania em Porto Alegre.</p>
+          <p>Aventura, amizade e aprendizado. Há mais de 5 anos promovendo o escotismo em Porto Alegre.</p>
           <div className="hero-buttons">
             <a href="#contato" className="btn btn-primary">Quero participar</a>
             <a href="#sobre" className="btn btn-secondary">Conheça o grupo</a>

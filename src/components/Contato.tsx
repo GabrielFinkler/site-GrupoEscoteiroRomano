@@ -42,14 +42,14 @@ export default function Contato() {
               <div className="contato-item-icon">📍</div>
               <div>
                 <h4>Localização</h4>
-                <p>Rua Noel Rosa, 225 Dentro do Colégio Romano Senhor Bom Jesus - Jardim Itu, Porto Alegre - RS, 91210-110</p>
+                <p>Rua Noel Rosa, 225. Colégio Romano Senhor Bom Jesus - Jardim Itu, Porto Alegre - RS, 91210-110.</p>
               </div>
             </div>
             <div className="contato-item">
               <div className="contato-item-icon">🕐</div>
               <div>
-                <h4>Reuniões</h4>
-                <p>Sábados, das 14h às 17h</p>
+                <h4>Atividades</h4>
+                <p>Sábados, das 14h às 17h.</p>
               </div>
             </div>
           </address>

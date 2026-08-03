@@ -4,22 +4,22 @@ export default function Sobre() {
       <div className="container">
         <article className="sobre-grid">
           <div className="sobre-text">
-            <span className="section-tag">Quem somos</span>
-            <h2>Grupo Escoteiro Romano 350/RS</h2>
+            <h2>Quem somos</h2>
             <p>
-              O Grupo Escoteiro Romano 350/RS é um grupo escoteiro de Porto Alegre
-              dedicado ao desenvolvimento de jovens através de atividades ao ar livre,
-              liderança e trabalho em equipe no bairro Jardim Itu.
+              Há mais de cinco anos, por meio do método escoteiro, aplicamos um projeto 
+              educativo que desenvolve crianças, 
+              adolescentes e jovens para a vida. Através de uma 
+              proposta baseada em desafios, experiências e aprendizado, 
+              acreditamos que cada atividade é uma oportunidade para promover liderança, 
+              responsabilidade, cuidado com a natureza e espírito de serviço à comunidade.
             </p>
             <p>
-              Baseados nos valores do Movimento Escoteiro mundial e vinculados aos
-              Escoteiros do Brasil, formamos cidadãos conscientes, responsáveis e
-              prontos para contribuir com a sociedade gaúcha.
+              Mais do que ensinar habilidades, buscamos formar pessoas autônomas, preparadas para fazer a diferença e contribuir com um mundo melhor!
             </p>
             <div className="sobre-stats" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
               <div className="stat-item">
-                <span className="stat-number">5+</span>
-                <span className="stat-label">Anos de história</span>
+                <span className="stat-number">5</span>
+                <span className="stat-label">Anos</span>
               </div>
               <div className="stat-item">
                 <span className="stat-number">4</span>

@@ -34,9 +34,8 @@ export default function Ramos() {
     <section id="ramos" className="ramos">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Faixas Etárias</span>
           <h2>Ramos do Escotismo</h2>
-          <p>O Movimento Escoteiro é dividido por faixas etárias para garantir que as atividades sejam perfeitas para o desenvolvimento de cada jovem.</p>
+          <p>As atividades são organizadas por faixas etárias, respeitando as necessidades, interesses e desafios de cada fase da vida para oferecer experiências adequadas ao desenvolvimento de cada um.</p>
         </div>
 
         <div className="ramos-grid">
