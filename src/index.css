@@ -797,8 +797,9 @@ footer {
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -825,11 +826,16 @@ footer {
 }
 
 .footer-links h4,
-.footer-social h4 {
+.footer-social-inline h4 {
   color: var(--white);
   font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+.footer-social-inline {
+  margin-top: 32px;
 }
 
 .footer-links ul {
