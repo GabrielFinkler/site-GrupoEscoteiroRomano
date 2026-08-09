@@ -13,12 +13,12 @@
 // ================================================================
 
 export const POSTS: string[] = [
+  'https://www.instagram.com/p/Dbn56j1Ef12/?img_index=1',
+  'https://www.instagram.com/p/DbQsFkixgki/',
+  'https://www.instagram.com/p/DbPLgxfEQoc/?img_index=1',
   'https://www.instagram.com/p/DbCdneUhvnZ/',
   'https://www.instagram.com/p/DafxrdqRW5c/',
-  'https://www.instagram.com/p/DZgC7Ycxqbx/',
   'https://www.instagram.com/p/DZDMu_qkfEx/?img_index=1',
-  'https://www.instagram.com/p/DYKTs0lEWC_/',
-  'https://www.instagram.com/p/DW2aTRCEbS4/',
 ]
 
 // ================================================================

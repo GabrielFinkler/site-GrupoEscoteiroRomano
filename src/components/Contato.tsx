@@ -24,13 +24,17 @@ export default function Contato() {
         </div>
         <div className="contato-grid">
           <address className="contato-info">
-            <div className="contato-item">
+            <a 
+              href="mailto:350rs@escoteiros.org.br"
+              className="contato-item"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className="contato-item-icon">📧</div>
               <div>
                 <h4>Email</h4>
                 <p>350rs@escoteiros.org.br</p>
               </div>
-            </div>
+            </a>
             <div className="contato-item">
               <div className="contato-item-icon">📱</div>
               <div>
@@ -38,13 +42,19 @@ export default function Contato() {
                 <p>(51) 93618-3496</p>
               </div>
             </div>
-            <div className="contato-item">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Rua+Noel+Rosa,+225,+Jardim+Itu,+Porto+Alegre+-+RS,+91210-110" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="contato-item"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className="contato-item-icon">📍</div>
               <div>
                 <h4>Localização</h4>
                 <p>Rua Noel Rosa, 225. Colégio Romano Senhor Bom Jesus - Jardim Itu, Porto Alegre - RS, 91210-110.</p>
               </div>
-            </div>
+            </a>
             <div className="contato-item">
               <div className="contato-item-icon">🕐</div>
               <div>
