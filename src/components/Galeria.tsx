@@ -5,12 +5,10 @@ declare global {
   interface Window {
     __bhldScript?: boolean
   }
-  namespace JSX {
-    interface IntrinsicElements {
-      'behold-widget': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { 'feed-id': string }
-    }
-  }
 }
+
+// Criamos um componente wrapper para evitar o erro do TypeScript com custom elements
+const BeholdWidget = 'behold-widget' as any;
 
 export default function Galeria() {
   useEffect(() => {
@@ -35,7 +33,7 @@ export default function Galeria() {
         </div>
 
         <div className="galeria-behold" style={{ margin: '3rem 0' }}>
-          <behold-widget feed-id="ILkIU9IXQxYCUdZoTaQD"></behold-widget>
+          <BeholdWidget feed-id="ILkIU9IXQxYCUdZoTaQD"></BeholdWidget>
         </div>
 
         <div className="galeria-cta">
