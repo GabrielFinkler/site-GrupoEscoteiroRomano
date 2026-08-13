@@ -1,28 +1,27 @@
 import { useEffect } from 'react'
-import { POSTS, INSTAGRAM_PROFILE, INSTAGRAM_HANDLE } from '../instagram-posts'
+import { INSTAGRAM_PROFILE, INSTAGRAM_HANDLE } from '../instagram-posts'
 
 declare global {
   interface Window {
-    instgrm?: {
-      Embeds: {
-        process: () => void
-      }
+    __bhldScript?: boolean
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'behold-widget': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { 'feed-id': string }
     }
   }
 }
 
 export default function Galeria() {
   useEffect(() => {
-    const scriptId = 'instagram-embed-script'
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script')
-      script.id = scriptId
-      script.src = 'https://www.instagram.com/embed.js'
-      script.async = true
-      document.body.appendChild(script)
-    } else {
-      window.instgrm?.Embeds.process()
-    }
+    if (window.__bhldScript) return
+    window.__bhldScript = true
+    const d = document, s = d.createElement('script')
+    s.type = 'module'
+    s.src = 'https://w.behold.so/widget.js'
+    setTimeout(() => {
+      d.head.append(s)
+    }, 0)
   }, [])
 
   return (
@@ -30,28 +29,13 @@ export default function Galeria() {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">Fotos</span>
-          <h2>Nossa Galeria</h2>
-          <p>Acompanhe nossos momentos mais recentes pelo Instagram</p>
+          <h2>Veja o Escotismo em Ação</h2>
+          <p>Acampamentos, trilhas, projetos e desafios fazem parte da nossa história, 
+            confira um pouco do que vivemos juntos e acompanhe nossas aventuras pelo instagram!</p>
         </div>
 
-        <div className="galeria-grid">
-          {POSTS.map((postUrl, index) => (
-            <div key={index} className="galeria-embed">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink={postUrl}
-                data-instgrm-version="14"
-                style={{
-                  background: '#FFF',
-                  border: 0,
-                  borderRadius: '12px',
-                  margin: '0',
-                  padding: 0,
-                  minWidth: '100%',
-                }}
-              />
-            </div>
-          ))}
+        <div className="galeria-behold" style={{ margin: '3rem 0' }}>
+          <behold-widget feed-id="ILkIU9IXQxYCUdZoTaQD"></behold-widget>
         </div>
 
         <div className="galeria-cta">
