@@ -204,7 +204,7 @@ header nav a.cta-nav:hover {
   position: relative;
   background:
     linear-gradient(175deg, rgba(45,10,10,0.88) 0%, rgba(74,18,21,0.75) 50%, rgba(139,37,48,0.65) 100%),
-    url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80') center/cover no-repeat;
+    url('/capa.jpg') center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -425,7 +425,7 @@ section {
   height: 450px;
   background:
     linear-gradient(135deg, rgba(139,37,48,0.2) 0%, transparent 60%),
-    url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80') center/cover;
+    url('/sobre.jpeg') center/cover;
   box-shadow: var(--shadow-lg);
   position: relative;
 }
