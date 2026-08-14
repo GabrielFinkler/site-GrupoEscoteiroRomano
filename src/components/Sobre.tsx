@@ -6,7 +6,7 @@ export default function Sobre() {
           <div className="sobre-text">
             <h2>Quem somos</h2>
             <p>
-              Há mais de cinco anos, por meio do método escoteiro, aplicamos um projeto 
+              Há mais de seis anos, por meio do método escoteiro, aplicamos um projeto 
               educativo que desenvolve crianças, 
               adolescentes e jovens para a vida. Através de uma 
               proposta baseada em desafios, experiências e aprendizado, 
@@ -18,7 +18,7 @@ export default function Sobre() {
             </p>
             <div className="sobre-stats" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
               <div className="stat-item">
-                <span className="stat-number">5</span>
+                <span className="stat-number">6</span>
                 <span className="stat-label">Anos</span>
               </div>
               <div className="stat-item">
